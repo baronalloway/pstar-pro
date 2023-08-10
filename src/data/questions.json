@@ -1,0 +1,411 @@
+{
+    "CollisionAvoidance": {
+        "title": "Collision Avoidance",
+        "sectionNumber": "1.0",
+        "questionList": [
+            {
+                "number": "1.01",
+                "questionText": "Which statement is true with regard to aircraft converging at approximately the same altitude?",
+                "questionAnswers": [
+                    {
+                        "answerText": "A jet airliner has the right of way over all other aircraft.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "An aeroplane has the right of way over all other aircraft which are converging from the left.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Aeroplanes towing gliders must give way to helicopters.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "1.02",
+                "questionText": "When two aircraft are converging at approximately the same altitude",
+                "questionAnswers": [
+                    {
+                        "answerText": "both aircraft shall alter heading to the left.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "the aircraft on the right shall avoid the other by descending.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "the aircraft that has the other on its right shall give way.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "the aircraft that has the other on its left shall give way.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "1.03",
+                "questionText": "When two aircraft are converging at approximately the same altitude, which statement applies?",
+                "questionAnswers": [
+                    {
+                        "answerText": "Gliders shall give way to helicopters.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Aeroplanes shall give way to power-driven heavier-than-air aircraft.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Gliders shall give way to aeroplanes.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Power-driven heavier-than-air aircraft shall give way to gliders.",
+                        "isCorrect": "true"
+                    }
+                ]
+            },
+            {
+                "number": "1.04",
+                "questionText": "When two aircraft are converging at approximately the same altitude, which statement applies?",
+                "questionAnswers": [
+                    {
+                        "answerText": "Gliders shall give way to helicopters.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Aeroplanes shall give way to helicopters.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Helicopters shall give way to aeroplanes.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Helicopters shall give way to gliders.",
+                        "isCorrect": "true"
+                    }
+                ]
+            },
+            {
+                "number": "1.05",
+                "questionText": "When two aircrafts are converging at approximately the same altitude, which statement applies?",
+                "questionAnswers": [
+                    {
+                        "answerText": "Gliders shall give way to helicopters.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Aeroplanes shall give way to helicopters.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "Helicopters shall give way to aeroplanes.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "Gliders shall give way to balloons.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "1.06",
+                "questionText": "When converging at approximately the same altitude",
+                "questionAnswers": [
+                    {
+                        "answerText": "balloons shall give way to hang gliders.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "aeroplanes towing gliders shall give way to balloons.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "balloons shall give way to gliders.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "balloons shall give way to airships.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "1.07",
+                "questionText": "When two power-driven heavier-than-air aircraft are converging at approximately the same altitude,",
+                "questionAnswers": [
+                    {
+                        "answerText": "the one on the left has the right of way.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "both shall alter heading to the left.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "the one on the right has the right of way.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "the one on the right shall give way by descending.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "1.08",
+                "questionText": "When two aircraft are approaching head-on or approximately so and there is danger of collision, each pilot shall",
+                "questionAnswers": [
+                    {
+                        "answerText": "decrease airspeed.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "increase airspeed.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "alter heading to the right.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "alter heading to the left.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "1.09",
+                "questionText": "When overtaking an aircraft at your 12 o’clock position, at your altitude, you should",
+                "questionAnswers": [
+                    {
+                        "answerText": "climb.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "descend.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "alter heading to the right.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "alter heading to the left.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "1.10",
+                "questionText": "Two aircraft are on approach to land, the aircraft at the higher altitude shall",
+                "questionAnswers": [
+                    {
+                        "answerText": "have the right of way.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "overtake the lower aircraft on the left.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "give way.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "complete a 360° turn to the right.",
+                        "isCorrect": "false"
+                    }
+                ]
+            }
+        ]
+    },
+    "VisualSignals": {
+        "title": "Visual Signals",
+        "sectionNumber": "2.0",
+        "questionList": [
+            {
+                "number": "2.01",
+                "questionText": "A series of green flashes directed at an aircraft means respectively (in flight; on the ground)",
+                "questionAnswers": [
+                    {
+                        "answerText": "cleared to land; cleared to taxi",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "return for landing; cleared for take-off",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "return for landing; cleared to taxi",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "cleared to land; cleared for take-off",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "2.02",
+                "questionText": "A steady red light directed at an aircraft means (in flight; on the ground)",
+                "questionAnswers": [
+                    {
+                        "answerText": "give way to other aircraft and continue circling; stop",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "give way to other aircraft and continue circling; taxi clear of landing area in use",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "airport unsafe do not land; taxi clear of landing area in use",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "airport unsafe do not land; stop",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "2.03",
+                "questionText": "A series of red flashes directed at an aircraft means respectively (in flight; on the ground)",
+                "questionAnswers": [
+                    {
+                        "answerText": "airport unsafe, do not land; taxi clear of landing area in use",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "give way to other aircraft and continue circling; stop",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "do not land for time being; return to starting point on airport",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "you are in prohibited area, alter course; stop",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "2.04",
+                "questionText": "A steady green light directed at an aircraft means respectively",
+                "questionAnswers": [
+                    {
+                        "answerText": "cleared to land; cleared to taxi",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "return for landing; cleared to taxi",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "return for landing; cleared for take-off",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "cleared to land; cleared for take-off",
+                        "isCorrect": "true"
+                    }
+                ]
+            },
+            {
+                "number": "2.05",
+                "questionText": "A flashing white light directed at an aircraft on the manoeuvring area of an airport means",
+                "questionAnswers": [
+                    {
+                        "answerText": "stop",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "return to starting point on the airport",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "cleared to taxi.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "taxi clear of landing area in use.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "2.06",
+                "questionText": "Blinking runway lights advises vehicles and pedestrians to",
+                "questionAnswers": [
+                    {
+                        "answerText": "return to the apron.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "vacate the runways immediately.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "be aware that an emergency is in progress; continue with caution.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "be aware that an emergency is in progress; hold your position.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "2.07",
+                "questionText": "Chrome yellow and black strips painted on pylons or on the roof of a building identifies",
+                "questionAnswers": [
+                    {
+                        "answerText": "an area where explosives are in use.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "a fur farm.",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "an artillery range.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "an open pit mine.",
+                        "isCorrect": "false"
+                    }
+                ]
+            },
+            {
+                "number": "2.08",
+                "questionText": "Pilots should not overfly reindeer or caribou at an altitude of less than",
+                "questionAnswers": [
+                    {
+                        "answerText": "2,500 feet AGL.",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "2,000 feet AGL",
+                        "isCorrect": "true"
+                    },
+                    {
+                        "answerText": "1,500 feet AGL",
+                        "isCorrect": "false"
+                    },
+                    {
+                        "answerText": "1,000 feet AGL",
+                        "isCorrect": "false"
+                    }
+                ]
+            }
+            
+        ]
+    }
+}
