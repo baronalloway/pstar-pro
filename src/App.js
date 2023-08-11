@@ -5,12 +5,11 @@ import Question from './Question';
 import Score from './Score';
 
 
-function getAllQuestions(numQuestions) {
-    var allQuestions = [];
+function getAllQuestions() {
+
 
     //initialize a new empty array with all questions
     var newAllQuestions = [];
-    var sections = 0;
     //get 5 random questions from each section, add it to the array
     for (var n=0; n < 70; n++){
         //first we get the current section that we are in, from 0-13
@@ -32,16 +31,14 @@ function getAllQuestions(numQuestions) {
     }
 
 
-    for (var i = 0; i < numQuestions; i++) {
-        allQuestions.push(Questions.CollisionAvoidance.questionList.pop(0));
-    }
+    
 
-    return allQuestions;
+    return newAllQuestions;
 }
 
 
 function App() {
-    const [questions, getQuestions] = useState(getAllQuestions(7));
+    const [questions, updateQuestions] = useState(getAllQuestions());
     const [responses, updateResponses] = useState({});
     const [testSubmitted, updateTestSubmitted] = useState(false);
     const [finalScore, updateFinalScore] = useState(0);
@@ -58,27 +55,12 @@ function App() {
 
         updateResponses(tempResponses);
     }
-
     const renderedQuestions = questions.map((question, index) => {
-        return (
-            <div key={index}>
-                <Question id={index}
-                updateSubmissions={updateScore}
-                questionBody={question}
-                isSubmitted={testSubmitted} /><br />
-            </div>)
+
+        return (<Question q={question} key={index}/>);
     });
 
-    const submitButtonPressed = () => {
-        var tempScore = 0;
-        for (var submittedAnswer in responses) {
-            if (responses[submittedAnswer] === 'true') {
-                tempScore++
-            }
-        }
-        updateFinalScore(tempScore);
-        updateTestSubmitted(true);
-    }
+    
 
 
 
@@ -86,9 +68,6 @@ function App() {
         <div>
             <h1><center>Welcome to PSTAR Quiz</center></h1>
             <div>{renderedQuestions}</div>
-            <div><button onClick={submitButtonPressed}>Submit Quiz</button></div>
-            <br />
-            <Score visible={testSubmitted} value={finalScore} />
         </div>
 
     );
