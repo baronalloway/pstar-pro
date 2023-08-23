@@ -2,15 +2,18 @@ import { useState } from 'react';
 import './style-questions.css';
 
 
+
+
 function Question({ q }) {
     const choices = q.question_choice.map((choice,index)=>{
-       return(<li key={index}>{choice}</li>)
+       return(<div key={index}><input type="radio" value={choice} name={q.question_number}/>
+       <label>{choice}</label></div>);
     });
 
     return (
         <div>
             <h2>{q.question_number}: {q.question_text}</h2>
-            <ul>{choices}</ul>
+           <div>{choices}</div>
         </div>);
 }
 export default Question;

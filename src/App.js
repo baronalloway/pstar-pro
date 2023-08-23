@@ -37,11 +37,13 @@ function getAllQuestions() {
 }
 
 
+
 function App() {
     const [questions, updateQuestions] = useState(getAllQuestions());
     const [responses, updateResponses] = useState({});
     const [testSubmitted, updateTestSubmitted] = useState(false);
     const [finalScore, updateFinalScore] = useState(0);
+    const [scoreSheet, updateScoreSheet] = useState([]);
 
 
     var hiddenDiv = { visibility: "hidden" };
