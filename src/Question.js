@@ -4,9 +4,16 @@ import './style-questions.css';
 
 
 
-function Question({ q }) {
+function Question({ q, answerChanged }) {
+
+    const handleClick = (e)=>{
+        var name = e.target.name;
+        var id = e.target.id;
+        answerChanged(name,id);
+    }
+
     const choices = q.question_choice.map((choice,index)=>{
-       return(<div key={index}><input type="radio" value={choice} name={q.question_number}/>
+       return(<div onChange={handleClick} key={index}><input type="radio" id={index} value={choice} name={q.question_number}/>
        <label>{choice}</label></div>);
     });
 
