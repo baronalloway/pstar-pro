@@ -47,7 +47,7 @@ function App() {
     const [questions, updateQuestions] = useState(getAllQuestions());
     const [responses, updateResponses] = useState({});
     const [testSubmitted, updateTestSubmitted] = useState(false);
-    const [score, updateScore] = useState(0);
+    const [score, updateScore] = useState({});
 
 
 
@@ -64,6 +64,7 @@ function App() {
 
 
     const renderedQuestions = questions.map((question, index) => {
+        
 
         return (<Question q={question} key={index} answerChanged={updateWorksheet} />);
     });
@@ -71,6 +72,7 @@ function App() {
 
     const gradeTest = () => {
         var finalScore = 0;
+        var numIncorrect = 0;
         //iterate through the score sheet that is submitted through the test
         for (var i in responses) {
             //if the answer is correct, update the score +1
@@ -80,9 +82,11 @@ function App() {
             if ((submitted_response) == correct_answer) {
                 finalScore += 1;
             }
+            else{
+                numIncorrect +=1;
+            }
         }
-        console.log("Temp final score: " + finalScore);
-        updateScore(finalScore);
+        updateScore({"finalScore":finalScore,"numIncorrect":numIncorrect});
 
 
     }
@@ -98,11 +102,11 @@ function App() {
                 <div className="column is-one-quarter">
                     <div className="sticky"><h2>Submit</h2>
                         <button onClick={gradeTest}>Submit Test</button>
-                        <div>Correct: {score}
+                        <div>Correct: {score['finalScore']} ({parseInt((score['finalScore']/70)*100)}%)
                         <br/>
-                        Incorrect: 
+                        Incorrect: {score['numIncorrect']}
                         <br/>
-                        Unanswered: 
+                        Unanswered: {70-(score['finalScore']+score['numIncorrect'])}
                         </div>
                     </div>
                 </div>

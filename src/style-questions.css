@@ -1,9 +1,12 @@
 .wrong{
-    color: red;
+    background-color: red;
 }
 .right{
-    color:green;
+    background-color:green;
 }
 .normal{
     color: black;
+}
+.unanswered{
+    background-color: grey;
 }
