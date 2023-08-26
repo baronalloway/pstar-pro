@@ -1,9 +1,13 @@
+//React and JS Imports
 import { useEffect, useState } from 'react';
 import Questions from "./data/questions.json";
 import newQuestions from "./data/canadian_aviation.json";
 import Question from './Question';
 import Score from './Score';
 
+//CSS Imports
+import 'bulma/css/bulma.css';
+import './css/app-style.css';
 
 function getAllQuestions() {
 
@@ -68,18 +72,18 @@ function App() {
     const gradeTest = () => {
         var finalScore = 0;
         //iterate through the score sheet that is submitted through the test
-        for(var i in responses){
+        for (var i in responses) {
             //if the answer is correct, update the score +1
-            var submitted_response = parseInt(responses[i])+1;
+            var submitted_response = parseInt(responses[i]) + 1;
             var correct_answer = parseInt(questions.find(a => a.question_number === i).answer_key);
 
-            if((submitted_response) == correct_answer){
+            if ((submitted_response) == correct_answer) {
                 finalScore += 1;
             }
         }
         console.log("Temp final score: " + finalScore);
         updateScore(finalScore);
-        
+
 
     }
 
@@ -87,9 +91,22 @@ function App() {
     return (
         <div>
             <h1><center>Welcome to PSTAR Quiz</center></h1>
-            <div>{renderedQuestions}</div>
-            <div><h2>Submit</h2><button onClick={gradeTest}>Submit Test</button></div>
-            <div>Correct: {score}</div>
+
+            <div className="columns">
+                <div className="column is-three-quarters">{renderedQuestions}</div>
+
+                <div className="column is-one-quarter">
+                    <div className="sticky"><h2>Submit</h2>
+                        <button onClick={gradeTest}>Submit Test</button>
+                        <div>Correct: {score}
+                        <br/>
+                        Incorrect: 
+                        <br/>
+                        Unanswered: 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     );

@@ -21,6 +21,7 @@ function Question({ q, answerChanged }) {
         <div>
             <h2>{q.question_number}: {q.question_text}</h2>
            <div>{choices}</div>
+           <hr></hr>
         </div>);
 }
 export default Question;
