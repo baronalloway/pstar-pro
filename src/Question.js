@@ -2,27 +2,50 @@ import { useState } from 'react';
 import './style-questions.css';
 
 
+function Question({ q, answerChanged, testSubmitted }) {
+    const [isCorrect, updateIsCorrect] = useState(false);
 
 
-function Question({ q, answerChanged }) {
-
-    const handleClick = (e)=>{
+    const handleClick = (e) => {
         var name = e.target.name;
         var value = e.target.value;
-        answerChanged(name,value);
+
+        if (parseInt(q['answer_key']) === (parseInt(value) + 1)) {
+            updateIsCorrect(true);
+        }
+        else {
+            updateIsCorrect(false);
+        }
+
+
+        answerChanged(name, value);
     }
 
-    const choices = q.question_choice.map((choice,index)=>{
-       return(<div onChange={handleClick} key={index}><input type="radio" value={index} name={q.question_number}/>
-       <label>{choice}</label></div>);
+    const checkSubmitted = () => {
+        if (testSubmitted) {
+            if(isCorrect){
+                return 'right';
+            }
+            else{
+                return 'wrong';
+            }
+        }
+        else{
+            return 'normal';
+        }
+    }
+
+    const choices = q.question_choice.map((choice, index) => {
+        return (<div onChange={handleClick} key={index}><input type="radio" value={index} name={q.question_number} />
+            <label>{choice}</label></div>);
     });
 
 
     return (
-        <div>
+        <div className={checkSubmitted()}>
             <h2>{q.question_number}: {q.question_text}</h2>
-           <div>{choices}</div>
-           <hr></hr>
+            <div>{choices}</div>
+            <hr></hr>
         </div>);
 }
 export default Question;

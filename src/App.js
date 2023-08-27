@@ -55,6 +55,7 @@ function App() {
     var showDiv = { visibility: "visible" };
 
     const updateWorksheet = (name, id) => {
+        updateTestSubmitted(false);
 
         var tempResponses = responses;
         tempResponses[name] = id;
@@ -66,11 +67,12 @@ function App() {
     const renderedQuestions = questions.map((question, index) => {
         
 
-        return (<Question q={question} key={index} answerChanged={updateWorksheet} />);
+        return (<Question q={question} key={index} answerChanged={updateWorksheet} testSubmitted={testSubmitted} />);
     });
 
 
     const gradeTest = () => {
+        updateTestSubmitted(true);
         var finalScore = 0;
         var numIncorrect = 0;
         //iterate through the score sheet that is submitted through the test
@@ -94,20 +96,20 @@ function App() {
 
     return (
         <div>
-            <h1><center>Welcome to PSTAR Quiz</center></h1>
+            <h1 className="title"><center>PSTAR Quiz</center></h1>
 
             <div className="columns">
                 <div className="column is-three-quarters">{renderedQuestions}</div>
 
                 <div className="column is-one-quarter">
-                    <div className="sticky"><h2>Submit</h2>
-                        <button onClick={gradeTest}>Submit Test</button>
-                        <div>Correct: {score['finalScore']} ({parseInt((score['finalScore']/70)*100)}%)
+                    <div className="sticky" style={{paddingTop: 5}}>
+                        <button className="button" onClick={gradeTest}>Submit Test</button>
+                       {testSubmitted && <div>Correct: {score['finalScore']} ({parseInt((score['finalScore']/70)*100)}%)
                         <br/>
                         Incorrect: {score['numIncorrect']}
                         <br/>
                         Unanswered: {70-(score['finalScore']+score['numIncorrect'])}
-                        </div>
+                        </div>}
                     </div>
                 </div>
             </div>

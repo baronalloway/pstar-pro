@@ -5,7 +5,7 @@
     background-color:green;
 }
 .normal{
-    color: black;
+    background-color: transparent;
 }
 .unanswered{
     background-color: grey;
