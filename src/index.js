@@ -12,10 +12,10 @@ const root = ReactDOM.createRoot(el);
 
 root.render(
 <Router>
-    <Link to="/pstar-pro">Index </Link>
+    <Link to="/">PSTAR Quiz </Link>
     <Link to="/score"> Score</Link>
     <Routes>
-        <Route index path="/pstar-pro" element={<App/>}/>
+        <Route index element={<App/>}/>
         <Route path="/score" element={<Score/>}/>
     </Routes>
 </Router>
