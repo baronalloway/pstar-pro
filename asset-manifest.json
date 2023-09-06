@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pstar-pro/static/css/main.251da3c8.css",
+    "main.js": "/pstar-pro/static/js/main.f9cbc9b9.js",
+    "index.html": "/pstar-pro/index.html",
+    "main.251da3c8.css.map": "/pstar-pro/static/css/main.251da3c8.css.map",
+    "main.f9cbc9b9.js.map": "/pstar-pro/static/js/main.f9cbc9b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.251da3c8.css",
+    "static/js/main.f9cbc9b9.js"
+  ]
+}
