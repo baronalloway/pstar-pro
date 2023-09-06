@@ -1,11 +1,6 @@
 function Score({visible,value}){
 
-    if(visible){
-        return (<div>Your Score is {value}</div>);
-    }
-    else{
-        return (<div></div>);
-    }
+    return(<h1>HELLO WORLD!</h1>);
 }
 
 export default Score;

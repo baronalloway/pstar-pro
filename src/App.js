@@ -11,6 +11,9 @@ import './css/app-style.css';
 
 function getAllQuestions() {
 
+    //have to copy the source data bc JS passes objects by reference...weird eh?
+    var testSetQuestions = JSON.parse(JSON.stringify(newQuestions));
+
 
     //initialize a new empty array with all questions
     var newAllQuestions = [];
@@ -20,22 +23,21 @@ function getAllQuestions() {
         var currSection = parseInt(n / 5);
 
         //then we get the number of questions that are in or remaining in that section
-        var remainingQuestions = newQuestions.sections[currSection].section_questions.length;
+        var remainingQuestions = testSetQuestions.sections[currSection].section_questions.length;
 
         //then we randomly generate a number between 0 and the length of the questions
         var randomSelect = Math.floor((Math.random()) * remainingQuestions);
 
         //then we add it to the new Array of Questions
-        var addQ = newQuestions.sections[currSection].section_questions[randomSelect];
+        var addQ = testSetQuestions.sections[currSection].section_questions[randomSelect];
         newAllQuestions.push(addQ);
 
         //and lastly, we remove it from the bank so that it cannot be added again
-        var index = newQuestions.sections[currSection].section_questions.indexOf(addQ);
-        newQuestions.sections[currSection].section_questions.splice(index, 1);
+        var index = testSetQuestions.sections[currSection].section_questions.indexOf(addQ);
+        testSetQuestions.sections[currSection].section_questions.splice(index, 1);
     }
 
-
-
+    
 
     return newAllQuestions;
 }
@@ -48,7 +50,6 @@ function App() {
     const [responses, updateResponses] = useState({});
     const [testSubmitted, updateTestSubmitted] = useState(false);
     const [score, updateScore] = useState({});
-
 
 
     var hiddenDiv = { visibility: "hidden" };
