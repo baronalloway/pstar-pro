@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pstar-pro/static/css/main.251da3c8.css",
-    "main.js": "/pstar-pro/static/js/main.0192c4d1.js",
+    "main.js": "/pstar-pro/static/js/main.f1dc5b3d.js",
     "index.html": "/pstar-pro/index.html",
     "main.251da3c8.css.map": "/pstar-pro/static/css/main.251da3c8.css.map",
-    "main.0192c4d1.js.map": "/pstar-pro/static/js/main.0192c4d1.js.map"
+    "main.f1dc5b3d.js.map": "/pstar-pro/static/js/main.f1dc5b3d.js.map"
   },
   "entrypoints": [
     "static/css/main.251da3c8.css",
-    "static/js/main.0192c4d1.js"
+    "static/js/main.f1dc5b3d.js"
   ]
 }
