@@ -37,7 +37,7 @@ function Question({ q, answerChanged, testSubmitted }) {
 
     const choices = q.question_choice.map((choice, index) => {
         return (<div onChange={handleClick} key={index}><input type="radio" value={index} name={q.question_number} />
-            <label>{choice}</label></div>);
+            <label> {choice}</label></div>);
     });
 
 

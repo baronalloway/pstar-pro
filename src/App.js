@@ -100,7 +100,7 @@ function App() {
             <h1 className="title"><center>PSTAR Quiz</center></h1>
 
             <div className="columns">
-                <div className="column is-three-quarters">{renderedQuestions}</div>
+                <div className="column is-three-quarters" style={{paddingLeft: "2em"}}>{renderedQuestions}</div>
 
                 <div className="column is-one-quarter">
                     <div className="sticky" style={{paddingTop: 5}}>
