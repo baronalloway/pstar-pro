@@ -3,7 +3,7 @@ import logo from './img/logo-main.png';
 
 function NavBar() {
     return (
-        <nav className="navbar" role="navigation" aria-label="main navigation" style={{boxShadow: "0 10px 10px rgb(0 0 0 / 0.2)", marginBottom: 15}}>
+        <nav className="navbar sticky" role="navigation" aria-label="main navigation" style={{boxShadow: "0 10px 10px rgb(0 0 0 / 0.2)", marginBottom: 15}}>
             <div className="navbar-brand">
                 <a className="navbar-item" href="#">
                     <img src={logo} width="112" height="28"/>

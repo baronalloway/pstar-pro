@@ -104,7 +104,7 @@ function App() {
 
                 <div className="column is-one-quarter">
                     <div className="sticky" style={{paddingTop: 5}}>
-                        <button className="button" onClick={gradeTest}>Submit Test</button>
+                        <button className="button sticky-button" onClick={gradeTest}>Submit Test</button>
                        {testSubmitted && <div>Correct: {score['finalScore']} ({parseInt((score['finalScore']/70)*100)}%)
                         <br/>
                         Incorrect: {score['numIncorrect']}

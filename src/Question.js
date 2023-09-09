@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './style-questions.css';
 
+import Answer from './Answer';
 
 function Question({ q, answerChanged, testSubmitted }) {
     const [isCorrect, updateIsCorrect] = useState(false);
@@ -42,9 +43,10 @@ function Question({ q, answerChanged, testSubmitted }) {
 
 
     return (
-        <div className={checkSubmitted()}>
+        <div>
             <h2>{q.question_number}: {q.question_text}</h2>
             <div>{choices}</div>
+            <Answer isSubmitted={testSubmitted} isCorrect={isCorrect} answerText={q.question_reference}/>
             <hr></hr>
         </div>);
 }

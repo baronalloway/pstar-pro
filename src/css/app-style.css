@@ -2,3 +2,8 @@
     position: sticky;
     top: 0px;
 }
+
+.sticky-button{
+    position: sticky;
+    margin-top: 60px;
+}
