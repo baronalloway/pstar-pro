@@ -1,11 +1,14 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleCheck, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+
 function Answer({ isSubmitted, isCorrect, answerText }) {
 
     const checkVisibility = () => {
         if (isSubmitted) {
-            return "visible";
+            return "block";
         }
         else {
-            return "hidden";
+            return "none";
         }
     }
 
@@ -18,10 +21,19 @@ function Answer({ isSubmitted, isCorrect, answerText }) {
         }
     }
 
+    const checkIcon = () => {
+        if(isCorrect){
+            return(faCircleCheck);
+        }
+        else{
+            return(faCircleXmark);
+        }
+    }
 
 
-    return (<div className={checkCorrect()} style={{ visibility: checkVisibility() }}>
-        {answerText}
+
+    return (<div className={checkCorrect()} style={{ display: checkVisibility() }}>
+       <FontAwesomeIcon icon={checkIcon()} /> {answerText}
     </div>);
 }
 

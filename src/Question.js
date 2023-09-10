@@ -44,7 +44,7 @@ function Question({ q, answerChanged, testSubmitted }) {
 
     return (
         <div>
-            <h2>{q.question_number}: {q.question_text}</h2>
+            <h2><b>{q.question_number}:</b> {q.question_text}</h2>
             <div>{choices}</div>
             <Answer isSubmitted={testSubmitted} isCorrect={isCorrect} answerText={q.question_reference}/>
             <hr></hr>

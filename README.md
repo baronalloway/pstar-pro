@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# PSTAR Pro: A Free PSTAR Practice Exam
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+This program is an easy way to practice the PSTAR Exam. This program takes all of the available questions from the Transport Canada Question Bank and gives 70 randomly selected questions (5 from each of the 14 categories) for the user to respond. It then grades the test and provides the user with answers and score.
 
 ## Available Scripts
 
